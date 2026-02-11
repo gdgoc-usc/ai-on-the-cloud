@@ -78,23 +78,8 @@ For AI/ML workloads, you may need to enable:
      - **Compute Engine API** (for VM instances)
      - **Cloud Storage API** (for data storage)
      - **Cloud Functions API** (for serverless computing)
-
-### Step 5: Set Up Billing Alerts
-
-Protect yourself from unexpected charges:
-
-1. **Navigate to Billing**
-   - Go to **"Billing"** from the hamburger menu
-   - Select your billing account
-
-2. **Create a Budget**
-   - Click **"Budgets & alerts"** in the left sidebar
-   - Click **"Create Budget"**
-   - Set a budget amount (e.g., $50)
-   - Configure alert thresholds (50%, 90%, 100%)
-   - Add your email for notifications
-
-### Step 6: Install Google Cloud CLI (Optional)
+     
+### Step 5: Install Google Cloud CLI (Optional)
 
 For command-line access:
 
@@ -159,29 +144,7 @@ For command-line access:
    - Choose **"Basic support - Free"** (recommended for learning)
    - Click **"Complete sign up"**
 
-### Step 2: Understanding AWS Free Tier
-
-AWS offers three types of free tier:
-
-1. **12 Months Free** (from account creation):
-   - EC2: 750 hours per month of t2.micro instances
-   - S3: 5GB of standard storage
-   - RDS: 750 hours per month of db.t2.micro instances
-   - Lambda: 1 million free requests per month
-   - And more...
-
-2. **Always Free**:
-   - Lambda: 1 million requests per month (forever)
-   - DynamoDB: 25GB of storage
-   - SNS: 1 million publishes per month
-   - And more...
-
-3. **Free Trials**:
-   - SageMaker: 2 months free trial
-   - Comprehend: 12 months free trial
-   - And more...
-
-### Step 3: Access the AWS Management Console
+### Step 2: Access the AWS Management Console
 
 1. **Sign In to Console**
    - Go to [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
@@ -192,56 +155,7 @@ AWS offers three types of free tier:
    - Familiarize yourself with the service search bar
    - Note the region selector (top right) - choose a region close to you
 
-### Step 4: Set Up IAM Security
-
-Secure your root account and create an IAM user:
-
-1. **Enable MFA on Root Account**
-   - Click on your account name (top right)
-   - Click **"Security credentials"**
-   - Scroll to **"Multi-factor authentication (MFA)"**
-   - Click **"Assign MFA device"** and follow instructions
-
-2. **Create an IAM User**
-   - Search for **"IAM"** in the services search
-   - Click **"Users"** in the left sidebar
-   - Click **"Add users"**
-   - Enter a username (e.g., "admin-user")
-   - Select **"Programmatic access"** and **"AWS Management Console access"**
-   - Set permissions: Attach **"AdministratorAccess"** policy for now
-   - Complete the wizard and save the credentials
-
-3. **Use IAM User for Daily Operations**
-   - Sign out of the root account
-   - Sign in using the IAM user credentials
-   - URL: `https://YOUR_ACCOUNT_ID.signin.aws.amazon.com/console`
-
-### Step 5: Set Up Billing Alerts
-
-Protect yourself from unexpected charges:
-
-1. **Enable Billing Alerts**
-   - Click on your account name (top right)
-   - Click **"Billing and Cost Management"**
-   - Click **"Billing preferences"** in the left sidebar
-   - Check **"Receive Billing Alerts"**
-   - Check **"Receive Free Tier Usage Alerts"**
-   - Enter your email address
-   - Click **"Save preferences"**
-
-2. **Create a CloudWatch Billing Alarm**
-   - Switch region to **US East (N. Virginia)** (billing metrics are only available here)
-   - Search for **"CloudWatch"** service
-   - Click **"Alarms"** → **"All alarms"**
-   - Click **"Create alarm"**
-   - Click **"Select metric"**
-   - Choose **"Billing"** → **"Total Estimated Charge"**
-   - Select **USD** checkbox and click **"Select metric"**
-   - Set threshold amount (e.g., $10)
-   - Configure SNS notification with your email
-   - Complete the alarm creation
-
-### Step 6: Install AWS CLI (Optional)
+### Step 3: Install AWS CLI (Optional)
 
 For command-line access:
 
@@ -278,23 +192,6 @@ For command-line access:
 4. **Review Documentation**
    - [GCP Documentation](https://cloud.google.com/docs)
    - [AWS Documentation](https://docs.aws.amazon.com/)
-
-### Important Notes
-- ⚠️ **Always monitor your billing**: Check your billing dashboard regularly
-- ⚠️ **Clean up resources**: Delete resources you're not using to avoid charges
-- ⚠️ **Use free tier wisely**: Both platforms offer generous free tiers, but they have limits
-- 🔒 **Security first**: Enable MFA and follow security best practices
-- 💡 **Start small**: Begin with simple projects before moving to complex deployments
-
-### Troubleshooting
-
-**GCP Issues**:
-- If you can't create a project, ensure billing is enabled
-- If APIs aren't working, make sure they're enabled in the API Library
-
-**AWS Issues**:
-- If you can't access services, check your IAM permissions
-- If billing alerts aren't working, ensure you're in the US East (N. Virginia) region for CloudWatch billing metrics
 
 ### Support Resources
 - **GCP Support**: [Google Cloud Support](https://cloud.google.com/support)
