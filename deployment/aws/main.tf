@@ -30,7 +30,7 @@ resource "aws_vpc_security_group_egress_rule" "allow_all_traffic_ipv6" {
 resource "aws_instance" "ai_training_instance" {
   ami           = "ami-07b531d2a90722369"
   instance_type = "t3.large"
-  key_name      = "skill-llm"
+  key_name      = "ai-on-the-cloud-key"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   root_block_device {
