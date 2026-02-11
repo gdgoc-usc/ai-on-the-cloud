@@ -19,6 +19,7 @@ The setup guide includes:
 - **[SETUP.md](SETUP.md)** - Comprehensive cloud account setup guide
 - [GCP Console](https://console.cloud.google.com/)
 - [AWS Console](https://console.aws.amazon.com/)
+- [Google Slides](https://docs.google.com/presentation/d/1NDId0ASAvc3ySIzaT2HISffI3dioDY2394kzLZKKJ-w/edit?usp=sharing)
 
 ## About
 
