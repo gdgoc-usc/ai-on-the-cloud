@@ -77,3 +77,15 @@ def train_model(model, data, labels, epochs=1000):
 
     predictions = model(data)
 
+
+def post_processing(predictions):
+    predlabels = torch.argmax(predictions,axis=1)
+    totalacc = 100*torch.mean((predlabels == labels).float())
+    print('Final accuracy: %g%%' %totalacc)
+
+
+if __name__ == "__main__":
+    dataset = get_data()
+    data, labels = preprocess_data(dataset)
+    model = get_model()
+    train_model(model, data, labels)
